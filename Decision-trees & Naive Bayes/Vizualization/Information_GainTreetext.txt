@@ -1,0 +1,263 @@
+node), split, n, loss, yval, (yprob)
+      * denotes terminal node
+
+    1) root 8000 854 no (0.893250000 0.106750000)  
+      2) duration< 364.5 6415 317 no (0.950584567 0.049415433)  
+        4) nr.employed>=5087.65 5714  86 no (0.984949247 0.015050753)  
+          8) month=aug,dec,jul,jun,may,nov 5281  19 no (0.996402197 0.003597803) *
+          9) month=apr,mar,oct 433  67 no (0.845265589 0.154734411)  
+           18) euribor3m< 1.5255 379  42 no (0.889182058 0.110817942)  
+             36) day_of_week=fri,mon 199   8 no (0.959798995 0.040201005) *
+             37) day_of_week=thu,tue,wed 180  34 no (0.811111111 0.188888889)  
+               74) duration< 105 45   1 no (0.977777778 0.022222222) *
+               75) duration>=105 135  33 no (0.755555556 0.244444444)  
+                150) job=blue-collar,entrepreneur,services 46   4 no (0.913043478 0.086956522) *
+                151) job=admin.,management,retired,self-employed,student,technician,unemployed 89  29 no (0.674157303 0.325842697)  
+                  302) euribor3m>=1.449 9   0 no (1.000000000 0.000000000) *
+                  303) euribor3m< 1.449 80  29 no (0.637500000 0.362500000)  
+                    606) age< 55.5 67  21 no (0.686567164 0.313432836)  
+                     1212) age>=26.5 58  16 no (0.724137931 0.275862069)  
+                       2424) education=high.school 8   0 no (1.000000000 0.000000000) *
+                       2425) education=basic.6y,basic.9y,professional.course,university.degree 50  16 no (0.680000000 0.320000000)  
+                         4850) duration< 233 26   5 no (0.807692308 0.192307692) *
+                         4851) duration>=233 24  11 no (0.541666667 0.458333333)  
+                           9702) education=university.degree 17   6 no (0.647058824 0.352941176) *
+                           9703) education=basic.6y,basic.9y,professional.course 7   2 yes (0.285714286 0.714285714) *
+                     1213) age< 26.5 9   4 yes (0.444444444 0.555555556) *
+                    607) age>=55.5 13   5 yes (0.384615385 0.615384615) *
+           19) euribor3m>=1.5255 54  25 no (0.537037037 0.462962963)  
+             38) duration< 84.5 10   0 no (1.000000000 0.000000000) *
+             39) duration>=84.5 44  19 yes (0.431818182 0.568181818)  
+               78) month=mar 35  16 no (0.542857143 0.457142857)  
+                156) job=housemaid,self-employed,technician 12   2 no (0.833333333 0.166666667) *
+                157) job=admin.,blue-collar,management,retired,student 23   9 yes (0.391304348 0.608695652)  
+                  314) duration< 145 10   4 no (0.600000000 0.400000000) *
+                  315) duration>=145 13   3 yes (0.230769231 0.769230769) *
+               79) month=oct 9   0 yes (0.000000000 1.000000000) *
+        5) nr.employed< 5087.65 701 231 no (0.670470756 0.329529244)  
+         10) duration< 165.5 335  38 no (0.886567164 0.113432836)  
+           20) duration< 68.5 58   0 no (1.000000000 0.000000000) *
+           21) duration>=68.5 277  38 no (0.862815884 0.137184116)  
+             42) emp.var.rate>=-3.2 206  19 no (0.907766990 0.092233010)  
+               84) education=basic.4y,basic.6y,basic.9y,high.school,illiterate 89   2 no (0.977528090 0.022471910) *
+               85) education=professional.course,university.degree 117  17 no (0.854700855 0.145299145)  
+                170) duration< 134.5 71   5 no (0.929577465 0.070422535) *
+                171) duration>=134.5 46  12 no (0.739130435 0.260869565)  
+                  342) day_of_week=mon 10   0 no (1.000000000 0.000000000) *
+                  343) day_of_week=fri,thu,tue,wed 36  12 no (0.666666667 0.333333333)  
+                    686) pdays>=9.5 29   7 no (0.758620690 0.241379310) *
+                    687) pdays< 9.5 7   2 yes (0.285714286 0.714285714) *
+             43) emp.var.rate< -3.2 71  19 no (0.732394366 0.267605634)  
+               86) pdays>=3.5 61  13 no (0.786885246 0.213114754)  
+                172) duration< 99.5 24   2 no (0.916666667 0.083333333) *
+                173) duration>=99.5 37  11 no (0.702702703 0.297297297)  
+                  346) duration>=140 8   0 no (1.000000000 0.000000000) *
+                  347) duration< 140 29  11 no (0.620689655 0.379310345)  
+                    694) campaign>=2.5 9   1 no (0.888888889 0.111111111) *
+                    695) campaign< 2.5 20  10 no (0.500000000 0.500000000)  
+                     1390) job=blue-collar,entrepreneur,housemaid,management,retired,student 13   4 no (0.692307692 0.307692308) *
+                     1391) job=admin.,technician 7   1 yes (0.142857143 0.857142857) *
+               87) pdays< 3.5 10   4 yes (0.400000000 0.600000000) *
+         11) duration>=165.5 366 173 yes (0.472677596 0.527322404)  
+           22) poutcome=failure,nonexistent 270 113 no (0.581481481 0.418518519)  
+             44) duration>=351.5 7   0 no (1.000000000 0.000000000) *
+             45) duration< 351.5 263 113 no (0.570342205 0.429657795)  
+               90) duration< 274.5 189  72 no (0.619047619 0.380952381)  
+                180) job=entrepreneur,housemaid,unemployed 17   2 no (0.882352941 0.117647059) *
+                181) job=admin.,blue-collar,management,retired,self-employed,services,student,technician 172  70 no (0.593023256 0.406976744)  
+                  362) duration< 198.5 55  16 no (0.709090909 0.290909091)  
+                    724) month=aug,dec,jul,nov,oct,sep 35   5 no (0.857142857 0.142857143) *
+                    725) month=apr,jun,mar,may 20   9 yes (0.450000000 0.550000000)  
+                     1450) duration>=178.5 11   4 no (0.636363636 0.363636364) *
+                     1451) duration< 178.5 9   2 yes (0.222222222 0.777777778) *
+                  363) duration>=198.5 117  54 no (0.538461538 0.461538462)  
+                    726) duration>=258 18   4 no (0.777777778 0.222222222) *
+                    727) duration< 258 99  49 yes (0.494949495 0.505050505)  
+                     1454) euribor3m>=0.8815 47  19 no (0.595744681 0.404255319)  
+                       2908) day_of_week=tue 8   0 no (1.000000000 0.000000000) *
+                       2909) day_of_week=fri,mon,thu,wed 39  19 no (0.512820513 0.487179487)  
+                         5818) previous>=0.5 12   3 no (0.750000000 0.250000000) *
+                         5819) previous< 0.5 27  11 yes (0.407407407 0.592592593)  
+                          11638) education=basic.4y,professional.course,university.degree 19   9 no (0.526315789 0.473684211) *
+                          11639) education=basic.9y,high.school 8   1 yes (0.125000000 0.875000000) *
+                     1455) euribor3m< 0.8815 52  21 yes (0.403846154 0.596153846)  
+                       2910) month=apr,aug,dec,jul,mar,oct 43  20 yes (0.465116279 0.534883721)  
+                         5820) education=basic.4y,high.school,professional.course 13   4 no (0.692307692 0.307692308) *
+                         5821) education=basic.6y,basic.9y,university.degree 30  11 yes (0.366666667 0.633333333)  
+                          11642) job=admin.,blue-collar,management,self-employed,student 20  10 no (0.500000000 0.500000000)  
+                            23284) day_of_week=fri,thu,wed 10   3 no (0.700000000 0.300000000) *
+                            23285) day_of_week=mon,tue 10   3 yes (0.300000000 0.700000000) *
+                          11643) job=retired,services,technician 10   1 yes (0.100000000 0.900000000) *
+                       2911) month=nov,sep 9   1 yes (0.111111111 0.888888889) *
+               91) duration>=274.5 74  33 yes (0.445945946 0.554054054)  
+                182) job=admin.,blue-collar,entrepreneur,housemaid,management,retired,self-employed,services,student 64  32 no (0.500000000 0.500000000)  
+                  364) month=mar,oct,sep 13   3 no (0.769230769 0.230769231) *
+                  365) month=apr,aug,jul,jun,may,nov 51  22 yes (0.431372549 0.568627451)  
+                    730) education=basic.9y,high.school 18   6 no (0.666666667 0.333333333) *
+                    731) education=basic.4y,basic.6y,professional.course,university.degree 33  10 yes (0.303030303 0.696969697)  
+                     1462) job=admin.,management,retired 26  10 yes (0.384615385 0.615384615)  
+                       2924) month=apr,jul,jun 14   6 no (0.571428571 0.428571429) *
+                       2925) month=aug,may,nov 12   2 yes (0.166666667 0.833333333) *
+                     1463) job=blue-collar,entrepreneur,self-employed,services,student 7   0 yes (0.000000000 1.000000000) *
+                183) job=technician,unemployed 10   1 yes (0.100000000 0.900000000) *
+           23) poutcome=success 96  16 yes (0.166666667 0.833333333) *
+      3) duration>=364.5 1585 537 no (0.661198738 0.338801262)  
+        6) duration< 599.5 924 212 no (0.770562771 0.229437229)  
+         12) euribor3m>=4.0485 563  51 no (0.909413854 0.090586146)  
+           24) duration< 535.5 446  29 no (0.934977578 0.065022422) *
+           25) duration>=535.5 117  22 no (0.811965812 0.188034188)  
+             50) age>=41.5 51   3 no (0.941176471 0.058823529) *
+             51) age< 41.5 66  19 no (0.712121212 0.287878788)  
+              102) day_of_week=mon,thu,wed 54  12 no (0.777777778 0.222222222) *
+              103) day_of_week=fri,tue 12   5 yes (0.416666667 0.583333333) *
+         13) euribor3m< 4.0485 361 161 no (0.554016620 0.445983380)  
+           26) nr.employed>=5087.65 226  71 no (0.685840708 0.314159292)  
+             52) campaign>=1.5 105  22 no (0.790476190 0.209523810)  
+              104) euribor3m< 1.32 40   2 no (0.950000000 0.050000000) *
+              105) euribor3m>=1.32 65  20 no (0.692307692 0.307692308)  
+                210) age>=32.5 50  11 no (0.780000000 0.220000000)  
+                  420) duration>=482 19   1 no (0.947368421 0.052631579) *
+                  421) duration< 482 31  10 no (0.677419355 0.322580645)  
+                    842) age< 39.5 10   1 no (0.900000000 0.100000000) *
+                    843) age>=39.5 21   9 no (0.571428571 0.428571429)  
+                     1686) campaign< 2.5 14   4 no (0.714285714 0.285714286) *
+                     1687) campaign>=2.5 7   2 yes (0.285714286 0.714285714) *
+                211) age< 32.5 15   6 yes (0.400000000 0.600000000) *
+             53) campaign< 1.5 121  49 no (0.595041322 0.404958678)  
+              106) duration< 485.5 82  23 no (0.719512195 0.280487805)  
+                212) education=basic.9y,high.school,professional.course 46   6 no (0.869565217 0.130434783) *
+                213) education=basic.4y,basic.6y,university.degree 36  17 no (0.527777778 0.472222222)  
+                  426) duration< 458.5 29  11 no (0.620689655 0.379310345)  
+                    852) job=blue-collar,management,technician 14   2 no (0.857142857 0.142857143) *
+                    853) job=admin.,retired,self-employed,services,unemployed 15   6 yes (0.400000000 0.600000000) *
+                  427) duration>=458.5 7   1 yes (0.142857143 0.857142857) *
+              107) duration>=485.5 39  13 yes (0.333333333 0.666666667)  
+                214) job=entrepreneur,retired,services,student,technician 14   5 no (0.642857143 0.357142857) *
+                215) job=admin.,blue-collar,management,self-employed 25   4 yes (0.160000000 0.840000000) *
+           27) nr.employed< 5087.65 135  45 yes (0.333333333 0.666666667)  
+             54) job=admin.,entrepreneur,management,retired,self-employed,technician 103  43 yes (0.417475728 0.582524272)  
+              108) duration< 408.5 34  13 no (0.617647059 0.382352941)  
+                216) month=apr,dec,nov,sep 8   0 no (1.000000000 0.000000000) *
+                217) month=aug,jul,jun,mar,may,oct 26  13 no (0.500000000 0.500000000)  
+                  434) day_of_week=mon,thu,tue 15   4 no (0.733333333 0.266666667) *
+                  435) day_of_week=fri,wed 11   2 yes (0.181818182 0.818181818) *
+              109) duration>=408.5 69  22 yes (0.318840580 0.681159420)  
+                218) pdays>=507 48  20 yes (0.416666667 0.583333333)  
+                  436) duration>=419 41  20 yes (0.487804878 0.512195122)  
+                    872) cons.conf.idx>=-32.2 15   5 no (0.666666667 0.333333333) *
+                    873) cons.conf.idx< -32.2 26  10 yes (0.384615385 0.615384615)  
+                     1746) campaign>=1.5 16   7 no (0.562500000 0.437500000) *
+                     1747) campaign< 1.5 10   1 yes (0.100000000 0.900000000) *
+                  437) duration< 419 7   0 yes (0.000000000 1.000000000) *
+                219) pdays< 507 21   2 yes (0.095238095 0.904761905) *
+             55) job=blue-collar,housemaid,services,student,unemployed 32   2 yes (0.062500000 0.937500000) *
+        7) duration>=599.5 661 325 no (0.508320726 0.491679274)  
+         14) pdays>=12.5 628 295 no (0.530254777 0.469745223)  
+           28) duration< 1026.5 457 185 no (0.595185996 0.404814004)  
+             56) euribor3m>=1.4075 328 117 no (0.643292683 0.356707317)  
+              112) job=housemaid,management,services 58  10 no (0.827586207 0.172413793) *
+              113) job=admin.,blue-collar,entrepreneur,retired,self-employed,student,technician,unemployed 270 107 no (0.603703704 0.396296296)  
+                226) month=apr,jun,may 125  38 no (0.696000000 0.304000000)  
+                  452) day_of_week=mon,thu,tue,wed 97  24 no (0.752577320 0.247422680)  
+                    904) job=admin.,entrepreneur,retired,self-employed 39   5 no (0.871794872 0.128205128) *
+                    905) job=blue-collar,student,technician,unemployed 58  19 no (0.672413793 0.327586207)  
+                     1810) education=basic.4y,basic.6y,basic.9y 31   6 no (0.806451613 0.193548387) *
+                     1811) education=high.school,professional.course,university.degree 27  13 no (0.518518519 0.481481481)  
+                       3622) duration< 680 10   2 no (0.800000000 0.200000000) *
+                       3623) duration>=680 17   6 yes (0.352941176 0.647058824) *
+                  453) day_of_week=fri 28  14 no (0.500000000 0.500000000)  
+                    906) education=basic.4y,high.school 9   2 no (0.777777778 0.222222222) *
+                    907) education=basic.6y,basic.9y,professional.course,university.degree 19   7 yes (0.368421053 0.631578947) *
+                227) month=aug,jul,nov,oct 145  69 no (0.524137931 0.475862069)  
+                  454) duration< 784.5 93  37 no (0.602150538 0.397849462)  
+                    908) day_of_week=mon,thu 43  12 no (0.720930233 0.279069767)  
+                     1816) education=basic.4y,basic.9y,professional.course,university.degree 33   6 no (0.818181818 0.181818182) *
+                     1817) education=high.school 10   4 yes (0.400000000 0.600000000) *
+                    909) day_of_week=fri,tue,wed 50  25 no (0.500000000 0.500000000)  
+                     1818) age< 31.5 12   3 no (0.750000000 0.250000000) *
+                     1819) age>=31.5 38  16 yes (0.421052632 0.578947368)  
+                       3638) education=basic.4y,basic.6y,high.school,professional.course 24  11 no (0.541666667 0.458333333)  
+                         7276) age< 55.5 17   6 no (0.647058824 0.352941176) *
+                         7277) age>=55.5 7   2 yes (0.285714286 0.714285714) *
+                       3639) education=basic.9y,university.degree 14   3 yes (0.214285714 0.785714286) *
+                  455) duration>=784.5 52  20 yes (0.384615385 0.615384615)  
+                    910) education=basic.9y,professional.course,university.degree 34  17 no (0.500000000 0.500000000)  
+                     1820) cons.conf.idx< -42.35 21   8 no (0.619047619 0.380952381)  
+                       3640) education=basic.9y 8   1 no (0.875000000 0.125000000) *
+                       3641) education=professional.course,university.degree 13   6 yes (0.461538462 0.538461538) *
+                     1821) cons.conf.idx>=-42.35 13   4 yes (0.307692308 0.692307692) *
+                    911) education=basic.4y,basic.6y,high.school 18   3 yes (0.166666667 0.833333333) *
+             57) euribor3m< 1.4075 129  61 yes (0.472868217 0.527131783)  
+              114) cons.price.idx< 94.207 120  59 no (0.508333333 0.491666667)  
+                228) month=dec,jul,jun,mar,nov,oct 17   2 no (0.882352941 0.117647059) *
+                229) month=apr,aug,may,sep 103  46 yes (0.446601942 0.553398058)  
+                  458) job=admin.,blue-collar,entrepreneur,housemaid,retired,services,student 79  38 no (0.518987342 0.481012658)  
+                    916) duration< 795.5 50  20 no (0.600000000 0.400000000)  
+                     1832) duration>=775.5 8   0 no (1.000000000 0.000000000) *
+                     1833) duration< 775.5 42  20 no (0.523809524 0.476190476)  
+                       3666) euribor3m>=1.3305 16   4 no (0.750000000 0.250000000) *
+                       3667) euribor3m< 1.3305 26  10 yes (0.384615385 0.615384615)  
+                         7334) education=basic.4y,high.school,professional.course,university.degree 15   7 no (0.533333333 0.466666667) *
+                         7335) education=basic.6y,basic.9y 11   2 yes (0.181818182 0.818181818) *
+                    917) duration>=795.5 29  11 yes (0.379310345 0.620689655)  
+                     1834) duration>=889 15   5 no (0.666666667 0.333333333) *
+                     1835) duration< 889 14   1 yes (0.071428571 0.928571429) *
+                  459) job=management,self-employed,technician,unemployed 24   5 yes (0.208333333 0.791666667)  
+                    918) day_of_week=tue,wed 7   3 no (0.571428571 0.428571429) *
+                    919) day_of_week=fri,mon,thu 17   1 yes (0.058823529 0.941176471) *
+              115) cons.price.idx>=94.207 9   0 yes (0.000000000 1.000000000) *
+           29) duration>=1026.5 171  61 yes (0.356725146 0.643274854)  
+             58) cons.price.idx< 92.559 10   2 no (0.800000000 0.200000000) *
+             59) cons.price.idx>=92.559 161  53 yes (0.329192547 0.670807453)  
+              118) job=blue-collar,housemaid,management,unemployed 67  29 yes (0.432835821 0.567164179)  
+                236) age>=48 18   7 no (0.611111111 0.388888889) *
+                237) age< 48 49  18 yes (0.367346939 0.632653061)  
+                  474) duration< 1209 25  12 no (0.520000000 0.480000000)  
+                    948) day_of_week=fri,thu,tue 11   3 no (0.727272727 0.272727273) *
+                    949) day_of_week=mon,wed 14   5 yes (0.357142857 0.642857143) *
+                  475) duration>=1209 24   5 yes (0.208333333 0.791666667) *
+              119) job=admin.,entrepreneur,retired,self-employed,services,student,technician 94  24 yes (0.255319149 0.744680851)  
+                238) campaign< 4.5 85  24 yes (0.282352941 0.717647059)  
+                  476) age< 31.5 21  10 yes (0.476190476 0.523809524)  
+                    952) month=aug,jun,nov 7   1 no (0.857142857 0.142857143) *
+                    953) month=dec,jul,may 14   4 yes (0.285714286 0.714285714) *
+                  477) age>=31.5 64  14 yes (0.218750000 0.781250000)  
+                    954) duration>=1355 27   9 yes (0.333333333 0.666666667)  
+                     1908) duration< 1488 8   3 no (0.625000000 0.375000000) *
+                     1909) duration>=1488 19   4 yes (0.210526316 0.789473684) *
+                    955) duration< 1355 37   5 yes (0.135135135 0.864864865) *
+                239) campaign>=4.5 9   0 yes (0.000000000 1.000000000) *
+         15) pdays< 12.5 33   3 yes (0.090909091 0.909090909) *
+
+
+
+
+
+
+
+n= 8000 
+
+node), split, n, loss, yval, (yprob)
+      * denotes terminal node
+
+ 1) root 8000 854 no (0.89325000 0.10675000)  
+   2) duration< 364.5 6415 317 no (0.95058457 0.04941543)  
+     4) nr.employed>=5087.65 5714  86 no (0.98494925 0.01505075) *
+     5) nr.employed< 5087.65 701 231 no (0.67047076 0.32952924)  
+      10) duration< 165.5 335  38 no (0.88656716 0.11343284) *
+      11) duration>=165.5 366 173 yes (0.47267760 0.52732240)  
+        22) poutcome=failure,nonexistent 270 113 no (0.58148148 0.41851852) *
+        23) poutcome=success 96  16 yes (0.16666667 0.83333333) *
+   3) duration>=364.5 1585 537 no (0.66119874 0.33880126)  
+     6) duration< 599.5 924 212 no (0.77056277 0.22943723)  
+      12) euribor3m>=4.0485 563  51 no (0.90941385 0.09058615) *
+      13) euribor3m< 4.0485 361 161 no (0.55401662 0.44598338)  
+        26) nr.employed>=5087.65 226  71 no (0.68584071 0.31415929) *
+        27) nr.employed< 5087.65 135  45 yes (0.33333333 0.66666667) *
+     7) duration>=599.5 661 325 no (0.50832073 0.49167927)  
+      14) pdays>=12.5 628 295 no (0.53025478 0.46974522)  
+        28) duration< 1026.5 457 185 no (0.59518600 0.40481400)  
+          56) euribor3m>=1.4075 328 117 no (0.64329268 0.35670732) *
+          57) euribor3m< 1.4075 129  61 yes (0.47286822 0.52713178) *
+        29) duration>=1026.5 171  61 yes (0.35672515 0.64327485) *
+      15) pdays< 12.5 33   3 yes (0.09090909 0.90909091) *

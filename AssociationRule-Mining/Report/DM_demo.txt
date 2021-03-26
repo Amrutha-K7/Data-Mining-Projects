@@ -1,0 +1,29 @@
+
+Data transcations format
+
+
+InvoiceNo    V11    536365    WHITE HANGING HEART T-LIGHT HOLDER,WHITE METAL LANTERN,CREAM CUPID HEARTS COAT HANGER,KNITTED UNION FLAG HOT WATER BOTTLE,RED WOOLLY HOTTIE WHITE HEART,    BABUSHKA NESTING BOXES,GLASS STAR FROSTED T-LIGHT HOLDER
+
+2    536366    HAND WARMER UNION JACK,HAND WARMER RED POLKA DOT
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Intermediate CSV file:
+
+1 WHITE HANGING HEART T-LIGHT HOLDER,WHITE METAL LANTERN,CREAM CUPID HEARTS COAT HANGER,KNITTED UNION FLAG HOT WATER BOTTLE,RED WOOLLY HOTTIE WHITE HEART.,SET 7 BABUSHKA NESTING BOXES,GLASS STAR FROSTED T-LIGHT HOLDER
+2                                                                                                                                                                        HAND WARMER UNION JACK,HAND WARMER RED POLKA DOT
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+> inspect(head(txnlist, 2))    items                                [1] {CREAM CUPID HEARTS COAT HANGER,          GLASS STAR FROSTED T-LIGHT HOLDER,       KNITTED UNION FLAG HOT WATER BOTTLE,     RED WOOLLY HOTTIE WHITE HEART.,          SET 7 BABUSHKA NESTING BOXES,            WHITE HANGING HEART T-LIGHT HOLDER,      WHITE METAL LANTERN}    
+            [2] {HAND WARMER RED POLKA DOT,               HAND WARMER UNION JACK}  
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Tried running 6th iteration for sup = 0.0006 and the candidate item sets produced were 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                  
